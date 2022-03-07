@@ -22,3 +22,6 @@ Windows Registry Editor Version 5.00
 ### C:\xampp\mysql\bin\my.ini
 
 ![image](https://user-images.githubusercontent.com/1501327/156976420-7b22dfbb-96e9-4d79-ad49-b5e7dba1845e.png)
+
+## Connector/ODBC
+[ODBC ドライバ](https://dev.mysql.com/downloads/connector/odbc/)
