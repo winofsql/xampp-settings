@@ -32,3 +32,8 @@ Windows Registry Editor Version 5.00
 ```sql
 create database lightbox
 ```
+
+## インポート
+```
+mysql -h localhost -u root -D lightbox --password= < lightbox.sql
+```
