@@ -1,4 +1,4 @@
-# xampp-settings
+# xampp-settings( XAMPP Version 7.4.27 )
 
 ### C:\java16 と C:\XAMPP を前提
 
