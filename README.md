@@ -26,7 +26,7 @@ Windows Registry Editor Version 5.00
 ## Connector/ODBC
 [ODBC ドライバ](https://dev.mysql.com/downloads/connector/odbc/)
 
-![image](https://user-images.githubusercontent.com/1501327/156977175-7bfe2957-09d8-47aa-ae83-4fe44ed52cf2.png)
+![image](https://user-images.githubusercontent.com/1501327/156979523-760edd53-d433-4486-9176-2591276e756e.png)
 
 ## データベース作成
 ```sql
