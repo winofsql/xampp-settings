@@ -5,9 +5,9 @@ Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
 ```
 
-### C:\java16 と C:\XAMPP を前提
+## C:\java16 と C:\XAMPP を前提
 
-### TOMCAT 用
+### TOMCAT 用 レジストリ設定
 ```
 Windows Registry Editor Version 5.00
 
