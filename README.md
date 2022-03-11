@@ -17,7 +17,7 @@ Windows Registry Editor Version 5.00
 "JavaHome"="C:\\java16"
 
 ```
-web.xml
+web.xml\
 ![image](https://user-images.githubusercontent.com/1501327/157794476-33448bc0-b1fa-47a5-a228-498a5de9183f.png)
 
 
