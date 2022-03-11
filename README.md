@@ -15,7 +15,6 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Development Kit]
 "JavaHome"="C:\\java16"
-
 ```
 #### web.xml
 ![image](https://user-images.githubusercontent.com/1501327/157794658-0bbc15eb-5f2e-49d8-9f42-52adc385b505.png)
