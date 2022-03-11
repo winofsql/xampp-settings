@@ -18,7 +18,12 @@ Windows Registry Editor Version 5.00
 ```
 ### web.xml
 ![image](https://user-images.githubusercontent.com/1501327/157795201-2fb4aac5-4ddc-4abd-ab61-ed53985b6961.png)
-
+```xml
+        <init-param>
+            <param-name>listings</param-name>
+            <param-value>true</param-value>
+        </init-param>
+```
 ![image](https://user-images.githubusercontent.com/1501327/157795752-fae270c3-edf0-4f1f-b8b8-21fac2f69e37.png)
 
 <br><br>
