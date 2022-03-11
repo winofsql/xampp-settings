@@ -25,6 +25,20 @@ Windows Registry Editor Version 5.00
         </init-param>
 ```
 ![image](https://user-images.githubusercontent.com/1501327/157795752-fae270c3-edf0-4f1f-b8b8-21fac2f69e37.png)
+```xml
+        <init-param>
+            <param-name>trimSpaces</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>compilerSourceVM</param-name>
+            <param-value>1.8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>compilerTargetVM</param-name>
+            <param-value>1.8</param-value>
+        </init-param>
+```
 
 <br><br>
 
