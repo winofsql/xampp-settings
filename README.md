@@ -5,6 +5,7 @@ Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
 ```
 ## Apache httpd.conf
+ドキュメントルートを設定\
 ![image](https://user-images.githubusercontent.com/1501327/157797077-d2723772-6072-4c7e-8083-6cdf8b7ac2ca.png)
 
 
