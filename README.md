@@ -40,8 +40,7 @@ Windows Registry Editor Version 5.00
         </init-param>
 ```
 
-<br><br>
-
+<br>
 
 ![image](https://user-images.githubusercontent.com/1501327/156975831-d5a147ec-ca9c-46bc-886c-6e7e5a7da6c6.png)
 
