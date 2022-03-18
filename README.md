@@ -55,6 +55,9 @@ Windows Registry Editor Version 5.00
 
 ![image](https://user-images.githubusercontent.com/1501327/158916638-988a77d6-55cc-426c-a67f-4698a4ae7236.png)
 
+![image](https://user-images.githubusercontent.com/1501327/158917061-61a6c569-8d19-44da-aef0-70c93c344fc6.png)
+
+
 ![image](https://user-images.githubusercontent.com/1501327/156976052-a376f120-86b2-4f73-94c9-b3ae049a372b.png)
 
 ## MySQL の設定
