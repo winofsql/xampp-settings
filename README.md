@@ -9,6 +9,8 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 ![image](https://user-images.githubusercontent.com/1501327/157797077-d2723772-6072-4c7e-8083-6cdf8b7ac2ca.png)
 
 
+[Visual Studio 2015 の Visual C++ 再頒布可能パッケージ](https://www.microsoft.com/ja-jp/download/details.aspx?id=48145)
+
 ## C:\java16 と C:\XAMPP を前提
 
 ### TOMCAT 用 レジストリ設定
