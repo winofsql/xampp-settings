@@ -10,6 +10,7 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 
 
 [Visual Studio 2017 の Microsoft Visual C++ 再頒布可能パッケージ](https://go.microsoft.com/fwlink/?LinkId=746572)
+[Redistributable packages for Visual Studio 2015, 2017, 2019, and 2022](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
 ## C:\java16 と C:\XAMPP を前提
 
