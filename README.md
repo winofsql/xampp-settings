@@ -18,6 +18,27 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 [Visual Studio 2017 の Microsoft Visual C++ 再頒布可能パッケージ](https://go.microsoft.com/fwlink/?LinkId=746572)\
 [Redistributable packages for Visual Studio 2015, 2017, 2019, and 2022](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
 
+## MySQL の設定
+### C:\xampp\mysql\bin\my.ini
+
+![image](https://user-images.githubusercontent.com/1501327/156976420-7b22dfbb-96e9-4d79-ad49-b5e7dba1845e.png)
+22/04/20
+```
+## UTF 8 Settings
+#init-connect=\'SET NAMES utf8\'
+#collation_server=utf8_unicode_ci
+character_set_server=utf8
+#skip-character-set-client-handshake
+#character_sets-dir="C:/xampp/mysql/share/charsets"
+sql_mode=NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION
+log_bin_trust_function_creators=1
+
+character-set-server=utf8mb4
+collation-server=utf8mb4_general_ci
+[mysqldump]
+max_allowed_packet=16M
+```
+
 ## C:\java16 と C:\XAMPP を前提
 
 ### TOMCAT 用 レジストリ設定
@@ -63,27 +84,6 @@ Windows Registry Editor Version 5.00
 
 
 ![image](https://user-images.githubusercontent.com/1501327/156976052-a376f120-86b2-4f73-94c9-b3ae049a372b.png)
-
-## MySQL の設定
-### C:\xampp\mysql\bin\my.ini
-
-![image](https://user-images.githubusercontent.com/1501327/156976420-7b22dfbb-96e9-4d79-ad49-b5e7dba1845e.png)
-22/04/20
-```
-## UTF 8 Settings
-#init-connect=\'SET NAMES utf8\'
-#collation_server=utf8_unicode_ci
-character_set_server=utf8
-#skip-character-set-client-handshake
-#character_sets-dir="C:/xampp/mysql/share/charsets"
-sql_mode=NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION
-log_bin_trust_function_creators=1
-
-character-set-server=utf8mb4
-collation-server=utf8mb4_general_ci
-[mysqldump]
-max_allowed_packet=16M
-```
 
 ## Connector/ODBC
 [ODBC ドライバ](https://downloads.mysql.com/archives/c-odbc/)
