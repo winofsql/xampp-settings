@@ -60,11 +60,16 @@ header( "Content-Type: text/html; charset=utf-8" );
 // 表示コントロール
 // *************************************
 $GLOBALS['title'] = "インデックス";
-$GLOBALS['comment'] = $_SERVER['CONTEXT_DOCUMENT_ROOT'];
+if ( $_SERVER['CONTEXT_DOCUMENT_ROOT'] == $_SERVER['DOCUMENT_ROOT'] ) {
+	$GLOBALS['comment'] = $_SERVER['DOCUMENT_ROOT'] . rtrim($GLOBALS['path'][0],"/");
+}
+else {
+	$GLOBALS['comment'] = $_SERVER['CONTEXT_DOCUMENT_ROOT'] . str_replace( $_SERVER['CONTEXT_PREFIX'], "", rtrim($GLOBALS['path'][0],"/"));
+}
 $GLOBALS['root_script'] = "files.php";
 
 // 表示するファイルの一覧は DOCUMENT_ROOT + REQUEST_URI
-$handle = @opendir($GLOBALS['comment']);
+$handle = opendir($GLOBALS['comment']);
 $files = array();	// 全ての一覧をソートしたものが入る
 $files2 = array();	// ファイルのみが入る
 while( $target = readdir( $handle ) ) {
@@ -73,16 +78,21 @@ while( $target = readdir( $handle ) ) {
 sort($files);
 foreach ( $files as $file ) {
 
+    $ttl = "";
+
 	// 対象外は読み飛ばし
 	if ( $file == '.' || $file == '..' ) {
 		continue;
 	}
-	if ( $file == ".htaccess" ) {
+	if ( $file == ".htaccess" || $file == ".title" ) {
 		continue;
 	}
 	// フォルダ
 	if ( is_dir($GLOBALS['comment'] . "/" .$file) ) {
 
+        if ( file_exists( $GLOBALS['comment'] . "/" .$file . "/.title" ) ) {
+            $ttl = file_get_contents( $GLOBALS['comment'] . "/" .$file . "/.title" );
+        }
 		// ダウンロード用のフォルダパス
 		//$path = urlencode($_SERVER['REQUEST_URI']);
 
@@ -93,6 +103,7 @@ foreach ( $files as $file ) {
 					<td><a class="link" href="./{$file}/">[{$file}]</a></td>
 					<td></td>
 					<td><a class="link" href="./?download={$file}">ダウンロード</a></td>
+                    <td>{$ttl}</td>
 				</tr>
 
 FILES;
@@ -104,6 +115,7 @@ FILES;
 					<td><a class="link" href="./{$file}/">[{$file}]</a></td>
 					<td></td>
 					<td></td>
+                    <td>{$ttl}</td>
 				</tr>
 
 FILES;
@@ -116,10 +128,15 @@ FILES;
 
 // ファイルのタイプの取得用
 $finfo = finfo_open(FILEINFO_MIME_TYPE);
+$ttl2 = "";
 foreach ( $files2 as $file ) {
 
 	$size = filesize($GLOBALS['comment'] . "/" . $file);
 	$type = finfo_file($finfo, $GLOBALS['comment'] . "/" . $file);
+
+    if ( file_exists( $GLOBALS['comment'] . "/.title" ) ) {
+        $tt2 = file_get_contents( $GLOBALS['comment'] . "/.title" );
+    }
 
 	// urlencode されたファイル名の対応(元々は日本語ファイル名)
 	$file_e = urlencode($file);
@@ -132,7 +149,7 @@ foreach ( $files2 as $file ) {
 					<tr>
 						<td><a href="{$file_e}">{$file}</a></td>
 						<td>{$size}</td>
-						<td><a class="link" href="./?download2={$file}">file</a> <input class="src" type="button" value="src" title="{$file}" style="margin-left:5px;"></td>
+						<td colspan="2"><a class="link" href="./?download2={$file}">file</a> <input class="src" type="button" value="src" title="{$file}" style="margin-left:5px;"></td>
 					</tr>
 
 FILES;
@@ -143,7 +160,7 @@ FILES;
 					<tr>
 						<td><a href="{$file_e}">{$file}</a></td>
 						<td>{$size}</td>
-						<td><a class="link" href="./?download2={$file}">file</a></td>
+						<td colspan="2"><a class="link" href="./?download2={$file}">file</a></td>
 					</tr>
 
 FILES;
@@ -156,8 +173,8 @@ FILES;
 				<tr>
 					<td><a href="{$file_e}">{$file}</a></td>
 					<td>{$size}</td>
-					<td>{$type}</td>
-				</tr>
+					<td colspan="2">{$type}</td>
+                    </tr>
 FILES;
 	}
 
@@ -242,7 +259,7 @@ $(function(){
 
 	$(".src").on("click", function(){
 		var target = $(this).prop("title");
-		var path = "<?= $_SERVER['DOCUMENT_ROOT'] . rtrim($GLOBALS['path'][0],"/") . "/" ?>" + target;
+		var path = "<?= str_replace("\\", "/", $GLOBALS['comment']) . "/" ?>" + target;
 		var formData = new FormData();
 		formData.append("path", path);
 		$.ajax({
@@ -368,7 +385,8 @@ $("#wrapper").css( "visibility", "hidden" );
 					<tr>
 						<th style='width:200px;'>ファイル名</th>
 						<th style='width:80px;'>サイズ</th>
-						<th>ＭＩＭＥ</th>
+						<th style='width:250px;'>ＭＩＭＥ</th>
+						<th><?= $tt2 ?></th>
 					</tr>
 
 					<?= $GLOBALS["data"] ?>

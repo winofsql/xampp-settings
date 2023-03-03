@@ -8,7 +8,12 @@ function download() {
 	$_GET['download'] = str_replace('/','',$_GET['download']);
 	$_GET['download'] = str_replace('..','',$_GET['download']);
 	$_GET['download'] = str_replace('.','',$_GET['download']);
-	$rpath = $_SERVER['DOCUMENT_ROOT']  . rtrim($GLOBALS['path'][0],"/") . "/" . $_GET['download'];
+	if ( $_SERVER['CONTEXT_DOCUMENT_ROOT'] == $_SERVER['DOCUMENT_ROOT'] ) {
+		$rpath = $_SERVER['DOCUMENT_ROOT']  . rtrim($GLOBALS['path'][0],"/") . "/" . $_GET['download'];
+	}
+	else {
+		$rpath = $_SERVER['CONTEXT_DOCUMENT_ROOT'] . str_replace( $_SERVER['CONTEXT_PREFIX'], "", rtrim($GLOBALS['path'][0],"/")) . "/" . $_GET['download'];
+	}
 	$rpath_exclude = $rpath . "/";
 
 //	if ( rtrim($GLOBALS['path'][0],"/") == '' ) {
@@ -92,7 +97,12 @@ function download2() {
 
 	$_GET['download2'] = str_replace('/','',$_GET['download2']);
 	$_GET['download2'] = str_replace('..','',$_GET['download2']);
-	$rpath = $_SERVER['DOCUMENT_ROOT']  . rtrim($GLOBALS['path'][0],"/") . "/" . $_GET['download2'];
+	if ( $_SERVER['CONTEXT_DOCUMENT_ROOT'] == $_SERVER['DOCUMENT_ROOT'] ) {
+		$rpath = $_SERVER['DOCUMENT_ROOT']  . rtrim($GLOBALS['path'][0],"/") . "/" . $_GET['download2'];
+	}
+	else {
+		$rpath = $_SERVER['CONTEXT_DOCUMENT_ROOT'] . str_replace( $_SERVER['CONTEXT_PREFIX'], "", rtrim($GLOBALS['path'][0],"/")) . "/" . $_GET['download2'];
+	}
 	$rpath_exclude = $rpath . "/";
 
 	// ***********************************************
