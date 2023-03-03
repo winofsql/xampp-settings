@@ -2,6 +2,9 @@
 ### 起動は管理者権限で
 ![image](https://user-images.githubusercontent.com/1501327/156975831-d5a147ec-ca9c-46bc-886c-6e7e5a7da6c6.png)
 
+## Apache と MySQL はサービス設定で
+![image](https://user-images.githubusercontent.com/1501327/222603253-83a68094-fd4b-4498-a9ac-90379ec25577.png)
+
 ```
 PHP 7.4.27 (cli) (built: Dec 14 2021 19:52:13) ( ZTS Visual C++ 2017 x64 )
 Copyright (c) The PHP Group
@@ -53,7 +56,6 @@ Windows Registry Editor Version 5.00
 <br>
 
 
-![image](https://user-images.githubusercontent.com/1501327/156976102-e448f722-6956-44ff-97eb-534c89a0920f.png)
 
 ![image](https://user-images.githubusercontent.com/1501327/158916638-988a77d6-55cc-426c-a67f-4698a4ae7236.png)
 
