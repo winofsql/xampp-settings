@@ -1,12 +1,13 @@
-# xampp-settings( XAMPP Version 7.4.27 )
+# xampp-settings( XAMPP Version 7.4.33 )
 ### 起動は管理者権限で
 ![image](https://user-images.githubusercontent.com/1501327/156975831-d5a147ec-ca9c-46bc-886c-6e7e5a7da6c6.png)
 
 ## Apache と MySQL はサービス設定で
 ![image](https://user-images.githubusercontent.com/1501327/222603253-83a68094-fd4b-4498-a9ac-90379ec25577.png)
 
+## php -v
 ```
-PHP 7.4.27 (cli) (built: Dec 14 2021 19:52:13) ( ZTS Visual C++ 2017 x64 )
+PHP 7.4.33 (cli) (built: Nov  2 2022 16:00:55) ( ZTS Visual C++ 2017 x64 )
 Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
 ```
