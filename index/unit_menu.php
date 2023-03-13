@@ -87,16 +87,16 @@ print <<< MMENU
 
 	<li><a class="mm_link_left"
 			target="_blank"
-			href="https://translate.google.co.jp/?hl=ja&tab=wT"
+			href="https://migi.me/vsc_snippet/"
 			target="_blank"
-		>Google 翻訳</a></li>
+		>VSCode スニペット作成</a></li>
 
 	<li>
-		<span>Google 関連</span>
+		<span>ドキュメント</span>
 		<ul>
-			<li><a target="_blank" href="https://drive.google.com/drive/shared-drives">共有ドライブ</a></li>
-			<li><a target="_blank" href="https://classroom.google.com/w/NTQ0MDcyMjYwNjVa/t/all">システム開発(Class)</a></li>
-			<li><a target="_blank" href="https://mail.google.com/mail">Gmail</a></li>
+			<li><a target="_blank" href="https://developer.mozilla.org/ja/docs/Web/API/Document_Object_Model">ドキュメントオブジェクトモデル</a></li>
+			<li><a target="_blank" href="https://developers.google.com/apps-script/reference?hl=ja">GAS</a></li>
+			<li><a target="_blank" href="https://www.php.net/manual/ja/">PHP</a></li>
 		</ul>
 	</li>		
 
