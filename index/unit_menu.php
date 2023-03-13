@@ -7,9 +7,27 @@ print <<< MMENU
 
 	<li><a class="mm_link_left"
 			target="_blank"
-			href="https://user.lolipop.jp/"
+			href="https://chat.openai.com/"
 			onclick="$('#mmenu_left').data('mmenu').close();"
-		>ロリポップ</a></li>
+		>ChatGPT</a></li>
+
+	<li><a class="mm_link_left"
+			target="_blank"
+			href="https://replit.com/"
+			onclick="$('#mmenu_left').data('mmenu').close();"
+		>Replit</a></li>
+
+	<li><a class="mm_link_left"
+			target="_blank"
+			href="https://getbootstrap.com/docs/"
+			onclick="$('#mmenu_left').data('mmenu').close();"
+		>Bootstrap(css)</a></li>
+
+	<li><a class="mm_link_left"
+			target="_blank"
+			href="https://vscode.dev/"
+			onclick="$('#mmenu_left').data('mmenu').close();"
+		>WEB VSCode</a></li>
 	<li>
 		<span>ロリポップ関連</span>
 		<ul>
