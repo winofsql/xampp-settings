@@ -28,14 +28,7 @@ print <<< MMENU
 			href="https://vscode.dev/"
 			onclick="$('#mmenu_left').data('mmenu').close();"
 		>WEB VSCode</a></li>
-	<li>
-		<span>ロリポップ関連</span>
-		<ul>
-			<li><a target="_blank" href="https://mysqladmin.lolipop.jp/pma/">phpMyAdmin</a></li>
-			<li><a target="_blank" href="https://tools.lolipop.jp/mail/mail/">WEBメーラー</a></li>
-			<li><a target="_blank" href="https://webmail.lolipop.jp/">WEBメーラー(ベータ)</a></li>
-		</ul>
-	</li>		
+
 	<li><a class="mm_link_left"
 			target="_blank"
 			href="https://getbootstrap.com/docs/"
@@ -90,6 +83,15 @@ print <<< MMENU
 			href="https://migi.me/vsc_snippet/"
 			target="_blank"
 		>VSCode スニペット作成</a></li>
+
+	<li>
+		<span>ロリポップ関連</span>
+		<ul>
+			<li><a target="_blank" href="https://mysqladmin.lolipop.jp/pma/">phpMyAdmin</a></li>
+			<li><a target="_blank" href="https://tools.lolipop.jp/mail/mail/">WEBメーラー</a></li>
+			<li><a target="_blank" href="https://webmail.lolipop.jp/">WEBメーラー(ベータ)</a></li>
+		</ul>
+	</li>		
 
 	<li>
 		<span>ドキュメント</span>
