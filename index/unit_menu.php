@@ -87,12 +87,6 @@ print <<< MMENU
 
 	<li><a class="mm_link_left"
 			target="_blank"
-			href="https://winofsql.jp/editor.html"
-			target="_blank"
-		>簡易オンラインエディタ</a></li>
-
-	<li><a class="mm_link_left"
-			target="_blank"
 			href="https://translate.google.co.jp/?hl=ja&tab=wT"
 			target="_blank"
 		>Google 翻訳</a></li>
